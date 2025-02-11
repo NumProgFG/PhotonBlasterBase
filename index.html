@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Shooter Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  
+  <!-- Start overlay -->
+  <div id="startOverlay">
+    <button id="startButton">Start Game</button>
+    <button id="optionsButton">Options</button>
+  </div>
+  
+  <!-- Game Over overlay -->
+  <div id="gameOverOverlay">
+    <div class="game-over-text">Game Over</div>
+    <button id="restartButton">Restart Game</button>
+  </div>
+  
+  <!-- Options overlay -->
+  <div id="optionsOverlay">
+    <div class="options-container">
+      <h2>Options</h2>
+      <label for="volumeSlider">Sound Volume:</label>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+      <button id="closeOptionsButton">Close</button>
+    </div>
+  </div>
+  
+  <!-- Upgrade overlay -->
+  <div id="upgradeOverlay">
+    <div class="upgrade-container" id="upgradeContainer"></div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
